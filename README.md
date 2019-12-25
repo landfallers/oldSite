@@ -1,5 +1,3 @@
-# land_web
-landfallのweb関連
+# web
 
-masterに直接pushはやめてください...
-"# web" 
+landfallのweb
