@@ -9,20 +9,18 @@ body {
 
 /* ページのトップに戻るボタンのデザイン ここから */
 #page_top{
-  width: 100px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   position: fixed;
   right: 0;
-  bottom: 0;
-  background: #428bca;
+  bottom: 120px;
   opacity: 0.6;
-  border-radius: 15px;
 }
 #page_top a{
   position: relative;
   display: block;
-  width: 100px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   text-decoration: none;
 }
 #page_top a::before{
@@ -30,11 +28,11 @@ body {
   font-weight: 900;
   content: '\f102';
   font-size: 25px;
-  color: #fff;
+  color: #428bca;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: -25px;
+  top: -40px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -46,11 +44,12 @@ body {
   font-size: 13px;
   color: #fff;
   position: absolute;
-  top: 30px;
+  top: 45px;
   bottom: 0;
   right: 0;
   left: 0;
   margin: auto;
   text-align: center;
+  color: #428bca;
 }
 /* ここまで */
