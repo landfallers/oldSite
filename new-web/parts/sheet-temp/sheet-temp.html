@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>コンテンツの基本的なシートテンプレート</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--試験的なcss-->
+    <link href="test.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="hts://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<!--概要
+        これはコンテンツをパソコンやモバイルに関わらず、あってほしい場所に配置し、コンテンツ間に適度な間隔や影をつけるためのものです。たとえばパソコンのときはサイドバーの位置にあるべきだけど、スマホの時は一番上がいいといったときにそれを少しの操作で実現することができます。これらについてコメントアウトでどのように制御されているのかについて説明していきます。自身でclassタグを入れたり抜いたりして、制御をみてみると面白いです。またシートというのがコンテンツの位置を決定するものについて、コンテンツというのが内容のことを指します。
+        
+    -->
+
+<body class="" style="background-color:#e0f0f0">
+    <!--メインの色を設定します-->
+    <!--ヘッダー内は気にしないでください-->
+    <header>
+        <div class="jumbotron jumbotron-fluid bg-dark text-white">
+            <div class="container">
+                <h1>コンテンツの基本的なシートテンプレート (基本的なbootstrap　htmlの説明)</h1>
+                <p class="lead">
+                    テキスト上ではbootstrap,htmlの重要ポイントについて説明します。またコメントアウトでシートの制御について説明しています。またオリジナルのcss（test.css)を部分的入れているので注意してください。
+                </p>
+            </div>
+            <!--基本の型　下のものをシンプルにしたテンプレートです-->
+            <div class="container-md">
+                <div class="d-flex flex-row flex-wrap">
+                    <!--固定-->
+                    <!--横のシート配列-->
+                    <div class="my-box align-self-stretch w-100  order-1">
+                        <!--幅と順番-->
+                        <div class="d-flex flex-column h-100">
+                            <!--固定-->
+                            <!--縦のシート配列-->
+                            <div class="my-box flex-fill bg-white mb-3 mr-3">
+                                <!--flex-fillの有無　背景色　シートのスペース-->
+                                <div class="row mr-0 ml-0 h-100">
+                                    <!--固定-->
+                                    <!--コンテンツのグリッド配列-->
+                                    <div class="col-12 p-3 border">
+                                        <!--この中にコンテンツをいれる-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-md">
+        <!--固定 ここはページ全体の大きさについて決めています　-->
+        <!--d-flex,my-box,d-flex,my-box,row,colの順番で階層が深くなります　コンテンツはその次にいれます-->
+        <div class="d-flex flex-row flex-wrap">
+            <!--固定 シートを制御するフレックスを定義しています　基本は横並びになるようにflex-rowをいれています-->
+            <!--シートの配置はモバイルでの順番となるようにする-->
+            <div class="my-box align-self-stretch w-100 w-md-75 order-md-1">
+                <!--前の三つは固定　my-boxでフレックスコンテンツであることの宣言、align-self-stretchでコンテンツが空の場合も高さがほかのものとそろうように指定、w-100で基本の大きさを横幅いっぱいとなるように指定しています　w-md-75は操作することができます　mdのところは（sm md lg xl）の四つから選択することができて、「それ以上で」という意味になります　75は（25　50　75　100）から選択ができます　それぞれ親要素に対するパーセンテージとなります　またこれはオリジナルのcssタグであることに注意してください　order-md-3はシートの順番をmd以上に画面が変更されたときに変化させます　mdは幅指定のものと同じです　３というのは順番を指します　兄弟要素にそれぞれ番号をふると効果が出てきます　また何も書いていないものが最優先となります-->
+                <div class="d-flex flex-column h-100">
+                    <!--固定 d-flexでフレックスを定義しています　ここは縦の設定をしています　詳しいことは下のシートについて見てください-->
+                    <div class="my-box flex-fill bg-white mb-3 mr-3">
+                        <!--前の２つは固定　my-boxでフレックスコンテンツであることの宣言、flex-fillで幅最大を指定しています　bg-whiteはシートの背景色を設定します　ですがコンテンツに色をつけたいときは内側のところで色を変更したほうがバグがなく便利です　mb-3 mr-3でコンテンツ間の間隔を調整することができます　設定は5段階あります　shadowは影をつけることができます。-->
+                        <div class="row mr-0 ml-0 h-100">
+                            <!-- 固定　rowでグリッドの宣言をします　mr-0 ml-0 h-100はbootstrapの仕様上必要なものです　-->
+                            <!--この中にコンテンツをいれます　主にcolを使い分割の幅を決めます-->
+                            <div class="col-12 p-3">
+                                <!--col-12は横幅いっぱいになるようにする指定です。ここにパディングをいれると文字と境界とのスペースができ、記事が見やすくなります。-->
+                                <h2>構造タグの装飾について</h2>
+                                <p class="h5">
+                                    html構造タグには外部のcssを読み取ることができます。方法は二つあって、class指定とid指定があります。id指定は一対一の関係で一つのidの記述に対して、一つだけの要素しか修飾できないのに対し、class指定はcss内にclassで定義した修飾を一つ記述するだけで構造タグに記述したすべての要素に反映することができます。
+                                </p>
+                                <p class="h5">
+                                    html内では複数のclassタグをclass="a b
+                                    c"のように記述します。こうすることでa,b,cそれぞれのcssタグを反映することができます。a,b,cの優先順位はcssの読み込まれる順番になります。なのでcssでb,a,cの順番に書かれているとc,a,bのように優先されます。また全角の空白が入ると認識されなくなるので注意しましょう。
+                                </p>
+                                <p class="h5">
+                                    css内ではclassは.w-25 {width: 25%
+                                    !important;}のように書きます。カンマの後に続くものがclassの名前になります。またモバイルなどの制御をするときには@media (min-width:
+                                    576px) {.w-sm-25{width: 25%
+                                    !important;}とします@media(min-width:576px)の部分で画面のサイズが576pxよりも大きい場合は参照しなさいという意味になります。中かっこ内にクラスタグを定義することで、条件を満たすときのみ、参照が可能になります。
+                                </p>
+                                <p class="h5">
+                                    またタグ内に直接cssを書き込むことができます。style="width:200px;
+                                    height:200px;"を構造タグ内に書き込むことで直接指定することができます。
+                                    このこと以外にも様々なことがあります。参考までにサブ要素にリンクを張っておきます。
+                                </p>
+
+                                <h2>開発環境について</h2>
+                                <p class="h5">
+                                    右もしくは下にあるリンクを参考にアドオンを入れると、以下の操作など、あれこれ便利なことができるようになります。
+                                    コードの整形：<kbd>alt+shift+f</kbd> <kbd>shift+option+f</kbd>
+                                    <br>
+                                    htmlのプレビュー:<kbd>alt+b</kbd>
+                                    <br>
+                                    コードの折り返し：<kbd>alt+z</kbd>
+                                </p>
+                                <p class="h5">
+                                    これらを使うことで作業がかなり楽になります。
+                                </p>
+
+                                <h2>代表的な構造タグについて</h2>
+                                <p class="h5">
+                                    ここではdiv p a img hr
+                                    hについてを説明したいと思います。divは範囲を指定するタグになります。このタグ自体には意味はなく、ただ範囲を指定します。pは一つの段落をしめす要素になります。基本的に記事はこの中に入るようにします。aはリンクですハイパーリンクを張ることができます。aタグ内の全体に対してhrefで指定したサイトへのリンクにすることができます。imgは写真についてを指定しま。注意すべきなのはaタグはhrefで指定するのに対して、imgはsrcで指定します。hrefはハイパーリンク、srcはソースの略であると理解すると忘れにくいです。hrは横線を引きます。またタグとして、テーマや話題を区切るという意味を持ちます。hは見出しタグです。h1~h6まであります。またbootstrapはclassタグとして使うことができます。なので見出しとしての意味があるときにのみ使い、それ以外はｐの中でクラス指定で使いましょう。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--縦についての説明　シートは隣のシートの幅と高さを合わるように伸縮するようにできています　なので隣のシートの高さが高いとき、シートが引き延ばされる現象が起こりえます　そのときシートを分割する制御をすることができます-->
+            <div class="my-box align-self-stretch w-100 w-md-25 order-md-2">
+                <div class="d-flex flex-column h-100">
+                    <!--ここに複数個のmy-boxを宣言したdivを入れることで分割ができます このときflex-fillを削除すると隣のシートでなく入れたコンテンツのサイズにあうようになります 
+                    -->
+                    <div class="my-box bg-white mb-3 mr-3 mr-md-0">
+                        <!--flex-fillを無くしています。mr-md-0を入れることでサイド表示になったときの領域を大きくします　またmは親要素から自身の要素までの空白を決定するものです-->
+                        <!--ここより深い階層は同じです-->
+                        <div class="row mr-0 ml-0 h-100">
+                            <div class="col-12 p-3">
+                                <h4>おさえておきたいタグのリンク</h4>
+                                <p class="h5">
+                                    <a href="http://www.htmq.com/html5/">全体について</a><br>
+                                    <a href="http://www.htmq.com/html5/div.shtml">divについて</a>
+                                    <a href="http://www.htmq.com/html5/p.shtml">pについて</a>
+                                    <a href="http://www.htmq.com/html5/img.shtml">imgについて</a>
+                                    <a href="http://www.htmq.com/html5/hr.shtml">hrについて</a>
+                                    <a href="http://www.htmq.com/html5/h.shtml">hについて</a>
+                                    <a href="http://www.htmq.com/html5/iframe.shtml">iframeについて</a>
+                                    <a href="http://www.htmq.com/html5/span.shtml">spanについて</a>
+                                        <a href="http://www.htmq.com/html5/nav.shtml">navについて</a>
+                                        <a href="http://www.htmq.com/html5/header.shtml">headerについて</a>
+                                        <a href="http://www.htmq.com/html5/footer.shtml">footerについて</a>
+                                        <a href="http://www.htmq.com/html5/area.shtml">areaについて</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-box bg-white mb-1 mr-md-0 mr-3 flex-fill">
+                        <!-- flex-fillを入れることでコンテンツを引き延ばします　なくすときれいになります-->
+                        <div class="row mr-0 ml-0 h-100">
+                            <div class="col-12">
+                                <h4>参考にしたサイト</h4>
+                                <p>コメントアウトを読めば大きい画面のときどうしてここが長いシートになっているのかがわかります</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-box bg-white mb-3 mr-md-0 mr-3  ">
+                        <!--flex-fillを無くしています。-->
+                        <div class="row mr-0 ml-0 h-100">
+                            <div class="col-12">
+                                <a
+                                    href="http://www.tohoho-web.com/bootstrap/index.html">bootstrapについて１（とほほのbootstrap）</a>
+                                <a
+                                    href="https://getbootstrap.jp/docs/4.4/getting-started/introduction/">bootstrapについて２(bootstrap公式）</a>
+                                <a href="https://ics.media/entry/18544/">vscodeのアドオン</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--最後にシートを合体させる制御についてです　これはシート同士の間隔を０にすることによって、全体として一つのシートかのように見えるようにします　ここでは少し違った小さい画面、中くらいの画面、大きい画面の三つで表示が変わるように制御しています　これを応用することで大きい画面のときにサイドにあるものを小さい画面のときに要素の半分は上、半分は下といった制御が可能になります -->
+            <!--タイトルのシート-->
+            <div class="my-box align-self-stretch w-100 order-md-3 order-1">
+                <div class="d-flex flex-column h-100">
+                    <div class="my-box flex-fill bg-white mb-lg-1 mb-0 mr-3 mr-md-0 ">
+                        <!--lg以上のときは下にマージン1、それ以外のときはマージンをなくします-->
+                        <div class="row mr-0 ml-0 h-100">
+                            <div class="col-12 p-lg-3 pr-3 pl-3 pt-3">
+                                <!--lg以上のときは独立のシートになるのですべての方向にパディングします　それ以下のときは上部と左右にパディングします-->
+                                <h2>bootstrapの主な説明</h2>
+                                <p>小、中、大の三つの画面サイズで表示が変わります</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--段落１のシート-->
+            <div class="my-box align-self-stretch w-100 w-md-50 order-md-4 order-2">
+                <!--md以上のときは大きさを半分にします-->
+                <div class="d-flex flex-column h-100">
+                    <div class="my-box flex-fill bg-white mr-lg-1 mb-md-3 mr-md-0 mb-0 mr-3 mr-md-0">
+                        <!--lg以上のときは横のマージン1をとることで、段落間に空白をつくります　md以上のときは下にマージン３横のマージン０をとり段落同士を横にくっつけます　それ以下のときは下にマージン０をとり、段落同士を上下にくっつけます-->
+                        <div class="row mr-0 ml-0 h-100">
+                            <div class="col-12 p-md-3 pr-3 pl-3 pt-3">
+                                <!--md以上のときは独立のシートになるのですべての方向にパディングします　それ以下のときは上部と左右にパディングします-->
+                                <h3>bootstrapのモバイル制御について</h3>
+                                <p class="h6">
+                                    bootstrapはスマホなどの小さい画面が基準となっています。例えばcontainerといったメイン素材はsmサイズのとき100％となるように作られています。サイズの選択は（sm,md,lg,xl)の4つの大きさがあります。これらはブレイクポイントと呼ばれ、ブレイクポイントをもつタグに組み込むことで、それぞれの指定したサイズ以上のときに効果がでるclassタグとなります。例えばcol-12をcol-md-12に変えるとmdのサイズ以上になるとcol-12になるという意味になります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--段落２のシート-->
+            <div class="my-box align-self-stretch w-100 w-md-50 order-md-5 order-3">
+                <div class="d-flex flex-column h-100">
+                    <div class="my-box flex-fill bg-white mb-md-3 mb-0 mr-3 mr-md-0">
+                        <div class="row mr-0 ml-0 h-100">
+                            <div class="col-12 p-md-3 pr-3 pl-3 pb-3">
+                                <h3>グリッド操作について</h3>
+                                <p class="h6">
+                                    グリッドはclaassにrowを入れることでその子要素をグリッド制御ができるようになります。基本は横を12分割となっています。子要素のクラスにcol-"number"を入れることで、その割合だけの横幅をもったものが作られます。合計が12を超える場合は改行されます。またcol-"breakpoint"-"number"のようにブレイクポイントを入れることができます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="jumbotron jumbotron-fluid bg-dark text-white">
+
+        </div>
+    </footer>
+</body>
+
+</html>
