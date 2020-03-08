@@ -1,0 +1,200 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 46px;
+}
+
+.navbar-color {
+    background-color: #000000;
+}
+
+
+/*ヘッダー部分のcss関係*/
+
+
+/* 背景のグラデーション https://webgradients.com/ ここから */
+
+.back1 {
+    background-image: linear-gradient(120deg, #ff5858 0%, #f09819 100%);
+}
+
+.back2 {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+}
+
+.back3 {
+    background-image: linear-gradient(to left, #0acffe 0%, #495aff 100%);
+}
+
+.back4 {
+    background-image: linear-gradient(to right, #f77062 0%, #fe5196 100%);
+}
+
+
+/* 画像を背景にする*/
+
+.index {
+    background-image: url("../img/92_cover_all.jpg");
+    background-repeat: no-repeat;
+    background-attachment: flex;
+    background-position-x: center;
+    background-position-y: 60%;
+}
+
+
+/* 背景のグラデーション ここまで */
+
+
+/* 見出しの文字の設定について */
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media (min-width: 576px) {
+    .title {
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 992px) {
+    .title {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+
+/* 大きさに対する画面制御 */
+
+@media (min-width: 576px) {
+    .w-sm-25 {
+        width: 25% !important;
+    }
+    .w-sm-50 {
+        width: 50% !important;
+    }
+    .w-sm-75 {
+        width: 75% !important;
+    }
+    .w-sm-100 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .w-md-25 {
+        width: 25% !important;
+    }
+    .w-md-50 {
+        width: 50% !important;
+    }
+    .w-md-75 {
+        width: 75% !important;
+    }
+    .w-md-100 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .w-lg-25 {
+        width: 25% !important;
+    }
+    .w-lg-50 {
+        width: 50% !important;
+    }
+    .w-lg-75 {
+        width: 75% !important;
+    }
+    .w-lg-100 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .w-xl-25 {
+        width: 25% !important;
+    }
+    .w-xl-50 {
+        width: 50% !important;
+    }
+    .w-xl-75 {
+        width: 75% !important;
+    }
+    .w-xl-100 {
+        width: 100% !important;
+    }
+}
+
+
+/* ページのトップに戻るボタンのデザイン ここから */
+
+#page_top {
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    opacity: 0.6;
+}
+
+#page_top a {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+}
+
+#page_top a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #428bca;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+#page_top a::after {
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #428bca;
+}
+
+
+/* ここまで */
