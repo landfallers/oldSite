@@ -1,0 +1,86 @@
+    /*ヘッダー部分のcss関係*/
+    
+    header {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    /* 背景のグラデーション https://webgradients.com/ ここから */
+    
+    .back1 {
+        background-image: linear-gradient(120deg, #ff5858 0%, #f09819 100%);
+    }
+    
+    .back2 {
+        background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+        background-blend-mode: multiply;
+    }
+    
+    .back3 {
+        background-image: linear-gradient(to left, #0acffe 0%, #495aff 100%);
+    }
+    
+    .back4 {
+        background-image: linear-gradient(to right, #f77062 0%, #fe5196 100%);
+    }
+    /* 画像を背景にする*/
+    
+    .home1 {
+        background-image: url("img/92_cover_all.jpg");
+        background-repeat: no-repeat;
+        background-attachment: flex;
+        background-position-x: center;
+        background-position-y: 60%;
+    }
+    .home2 {
+        background-image: url("img/92_cover_all.jpg");
+        background-repeat: no-repeat;
+        background-attachment: flex;
+        background-position-x: center;
+        background-position-y: 60%;
+    }
+    .home3 {
+        background-image: url("img/92_cover_all.jpg");
+        background-repeat: no-repeat;
+        background-attachment: flex;
+        background-position-x: center;
+        background-position-y: 60%;
+    }
+    .home4 {
+        background-image: url("img/92_cover_all.jpg");
+        background-repeat: no-repeat;
+        background-attachment: flex;
+        background-position-x: center;
+        background-position-y: 60%;
+    }
+    /* 背景のグラデーション ここまで */
+    /* 見出しの文字の設定について */
+    
+    .title {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    
+    @media (min-width: 576px) {
+        .title {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+    }
