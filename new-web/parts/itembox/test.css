@@ -1,0 +1,33 @@
+body {
+    padding-top: 100px;
+}
+
+.itembox {
+    min-height: 150px;
+}
+
+@media(min-width:768px) {
+    .itembox {
+        height: 200px;
+    }
+}
+
+.tag-text {
+    font-size: 1.2rem;
+}
+
+.item-link:link {
+    background: rgb(238, 52, 52);
+}
+
+.item-link:visited {
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.item-link:hover {
+    background: #44fff6;
+}
+
+.item-link:active {
+    color: #5581d3;
+}
