@@ -1,3 +1,5 @@
+/* リストここから */
+
 ul.cp_list {
     position: relative;
     padding: 0 0.5em;
@@ -73,6 +75,9 @@ ul.cp_list li::before {
 ul.cp_list li:last-of-type {
     border-bottom: none;
 }
+
+
+/* リストここまで */
 
 
 /* te 
