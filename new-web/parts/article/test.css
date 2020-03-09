@@ -2,6 +2,9 @@ body {
     padding-top: 100px;
 }
 
+
+/* 見出し ここから*/
+
 .title1 {
     color: #364e96;
     /*文字色*/
@@ -12,6 +15,9 @@ body {
     border-bottom: solid 3px #364e96;
     /*下線*/
 }
+
+
+/* 見出し ここまで*/
 
 .title2 {
     padding: 0.5em;

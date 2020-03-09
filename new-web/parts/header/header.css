@@ -24,7 +24,12 @@
     }
     /* 画像を背景にする*/
     /* 背景のグラデーション ここまで */
-    /* 見出しの文字の設定について */
+    /* headerについて　ここから */
+    
+    header {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
     
     .title {
         font-size: 2.0rem;
@@ -47,3 +52,4 @@
             line-height: 1.2;
         }
     }
+    /* headerについて ここまで */

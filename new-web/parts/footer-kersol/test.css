@@ -32,8 +32,16 @@ footer ul.cp_list li a:hover {
     color: #7e7e7e;
 }
 
+body {
+    padding-top: 100px;
+}
+
+
+/* アイテムボックス　ここから */
+
 .btn-flat-border {
     text-decoration: none;
+    background: #ffffff;
     color: #000000;
     transition: .3s;
 }
@@ -42,10 +50,6 @@ footer ul.cp_list li a:hover {
     text-decoration: none;
     background: #22222267;
     color: white;
-}
-
-body {
-    padding-top: 100px;
 }
 
 .itembox {
@@ -79,6 +83,9 @@ body {
 .tag-text {
     font-size: 1.2rem;
 }
+
+
+/* アイテムボックス　ここまで */
 
 @media (min-width: 576px) {
     .w-sm-25 {

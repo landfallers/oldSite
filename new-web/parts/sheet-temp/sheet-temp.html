@@ -79,29 +79,23 @@
                                     html構造タグには外部のcssを読み取ることができます。方法は二つあって、class指定とid指定があります。id指定は一対一の関係で一つのidの記述に対して、一つだけの要素しか修飾できないのに対し、class指定はcss内にclassで定義した修飾を一つ記述するだけで構造タグに記述したすべての要素に反映することができます。
                                 </p>
                                 <p class="h5">
-                                    html内では複数のclassタグをclass="a b
-                                    c"のように記述します。こうすることでa,b,cそれぞれのcssタグを反映することができます。a,b,cの優先順位はcssの読み込まれる順番になります。なのでcssでb,a,cの順番に書かれているとc,a,bのように優先されます。また全角の空白が入ると認識されなくなるので注意しましょう。
+                                    html内では複数のclassタグをclass="a b c"のように記述します。こうすることでa,b,cそれぞれのcssタグを反映することができます。a,b,cの優先順位はcssの読み込まれる順番になります。なのでcssでb,a,cの順番に書かれているとc,a,bのように優先されます。また全角の空白が入ると認識されなくなるので注意しましょう。
                                 </p>
                                 <p class="h5">
-                                    css内ではclassは.w-25 {width: 25%
-                                    !important;}のように書きます。カンマの後に続くものがclassの名前になります。またモバイルなどの制御をするときには@media (min-width:
-                                    576px) {.w-sm-25{width: 25%
-                                    !important;}とします@media(min-width:576px)の部分で画面のサイズが576pxよりも大きい場合は参照しなさいという意味になります。中かっこ内にクラスタグを定義することで、条件を満たすときのみ、参照が可能になります。
+                                    css内ではclassは.w-25 {width: 25% !important;}のように書きます。カンマの後に続くものがclassの名前になります。またモバイルなどの制御をするときには@media (min-width: 576px) {.w-sm-25{width: 25% !important;}とします@media(min-width:576px)の部分で画面のサイズが576pxよりも大きい場合は参照しなさいという意味になります。中かっこ内にクラスタグを定義することで、条件を満たすときのみ、参照が可能になります。
                                 </p>
                                 <p class="h5">
-                                    またタグ内に直接cssを書き込むことができます。style="width:200px;
-                                    height:200px;"を構造タグ内に書き込むことで直接指定することができます。
-                                    このこと以外にも様々なことがあります。参考までにサブ要素にリンクを張っておきます。
+                                    またタグ内に直接cssを書き込むことができます。style="width:200px; height:200px;"を構造タグ内に書き込むことで直接指定することができます。 このこと以外にも様々なことがあります。参考までにサブ要素にリンクを張っておきます。
                                 </p>
 
                                 <h2>開発環境について</h2>
                                 <p class="h5">
-                                    右もしくは下にあるリンクを参考にアドオンを入れると、以下の操作など、あれこれ便利なことができるようになります。
-                                    コードの整形：<kbd>alt+shift+f</kbd> <kbd>shift+option+f</kbd>
-                                    <br>
-                                    htmlのプレビュー:<kbd>alt+b</kbd>
-                                    <br>
-                                    コードの折り返し：<kbd>alt+z</kbd>
+                                    右もしくは下にあるリンクを参考にアドオンを入れると、以下の操作など、あれこれ便利なことができるようになります。 コードの整形：
+                                    <kbd>alt+shift+f</kbd> <kbd>shift+option+f</kbd>
+                                    <br> htmlのプレビュー:
+                                    <kbd>alt+b</kbd>
+                                    <br> コードの折り返し：
+                                    <kbd>alt+z</kbd>
                                 </p>
                                 <p class="h5">
                                     これらを使うことで作業がかなり楽になります。
@@ -109,8 +103,7 @@
 
                                 <h2>代表的な構造タグについて</h2>
                                 <p class="h5">
-                                    ここではdiv p a img hr
-                                    hについてを説明したいと思います。divは範囲を指定するタグになります。このタグ自体には意味はなく、ただ範囲を指定します。pは一つの段落をしめす要素になります。基本的に記事はこの中に入るようにします。aはリンクですハイパーリンクを張ることができます。aタグ内の全体に対してhrefで指定したサイトへのリンクにすることができます。imgは写真についてを指定しま。注意すべきなのはaタグはhrefで指定するのに対して、imgはsrcで指定します。hrefはハイパーリンク、srcはソースの略であると理解すると忘れにくいです。hrは横線を引きます。またタグとして、テーマや話題を区切るという意味を持ちます。hは見出しタグです。h1~h6まであります。またbootstrapはclassタグとして使うことができます。なので見出しとしての意味があるときにのみ使い、それ以外はｐの中でクラス指定で使いましょう。
+                                    ここではdiv p a img hr hについてを説明したいと思います。divは範囲を指定するタグになります。このタグ自体には意味はなく、ただ範囲を指定します。pは一つの段落をしめす要素になります。基本的に記事はこの中に入るようにします。aはリンクですハイパーリンクを張ることができます。aタグ内の全体に対してhrefで指定したサイトへのリンクにすることができます。imgは写真についてを指定しま。注意すべきなのはaタグはhrefで指定するのに対して、imgはsrcで指定します。hrefはハイパーリンク、srcはソースの略であると理解すると忘れにくいです。hrは横線を引きます。またタグとして、テーマや話題を区切るという意味を持ちます。hは見出しタグです。h1~h6まであります。またbootstrapはclassタグとして使うことができます。なので見出しとしての意味があるときにのみ使い、それ以外はｐの中でクラス指定で使いましょう。
                                 </p>
                             </div>
                         </div>
@@ -137,10 +130,10 @@
                                     <a href="http://www.htmq.com/html5/h.shtml">hについて</a>
                                     <a href="http://www.htmq.com/html5/iframe.shtml">iframeについて</a>
                                     <a href="http://www.htmq.com/html5/span.shtml">spanについて</a>
-                                        <a href="http://www.htmq.com/html5/nav.shtml">navについて</a>
-                                        <a href="http://www.htmq.com/html5/header.shtml">headerについて</a>
-                                        <a href="http://www.htmq.com/html5/footer.shtml">footerについて</a>
-                                        <a href="http://www.htmq.com/html5/area.shtml">areaについて</a>
+                                    <a href="http://www.htmq.com/html5/nav.shtml">navについて</a>
+                                    <a href="http://www.htmq.com/html5/header.shtml">headerについて</a>
+                                    <a href="http://www.htmq.com/html5/footer.shtml">footerについて</a>
+                                    <a href="http://www.htmq.com/html5/area.shtml">areaについて</a>
                                 </p>
                             </div>
                         </div>
@@ -158,10 +151,8 @@
                         <!--flex-fillを無くしています。-->
                         <div class="row mr-0 ml-0 h-100">
                             <div class="col-12">
-                                <a
-                                    href="http://www.tohoho-web.com/bootstrap/index.html">bootstrapについて１（とほほのbootstrap）</a>
-                                <a
-                                    href="https://getbootstrap.jp/docs/4.4/getting-started/introduction/">bootstrapについて２(bootstrap公式）</a>
+                                <a href="http://www.tohoho-web.com/bootstrap/index.html">bootstrapについて１（とほほのbootstrap）</a>
+                                <a href="https://getbootstrap.jp/docs/4.4/getting-started/introduction/">bootstrapについて２(bootstrap公式）</a>
                                 <a href="https://ics.media/entry/18544/">vscodeのアドオン</a>
                             </div>
                         </div>
