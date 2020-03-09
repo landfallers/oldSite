@@ -11,7 +11,6 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <!-- Custom css -->
     <link href="index.css" rel="stylesheet">
     <!-- font-awesome -->
@@ -20,9 +19,10 @@
     <script src="https://kit.fontawesome.com/8bbc87aeb0.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
+<!--基本の型　下のものをシンプルにしたテンプレートです-->
 
 
-<body style="background-color: #f0f0f0;">
+<body style="background-color: #e9e9e9;">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark back2 fixed-top" style="background-color: #222222;">
         <div class="container-fluid">
@@ -49,205 +49,496 @@
         </div>
     </nav>
     <!-- Header -->
-    <header class="index py-4 mb-1">
-        <div class="container h-100">
-            <div class="row h-100 justify-content-center text-center ">
-                <div class="col-lg-9 col-xl-8 col-12">
-                    <h1 class="title text-white mt-md-5 mb-1 ">Welcome to <strong>LANDFALL</strong></h1>
-                    <p class=" mb-md-5 text-light px-md-5">
-                        東工大の研究室は、科学研究に対する情熱にあふれています。知りたいな、わくわくする、すごいなぁ。そんな気持ちを大切に。最先端の研究が行われる研究室の様子、覗いてみませんか。
+    <header class=" mb-2" style="background: url('img/bio.jpg') ;background-size:120%;background-position-y:center; ">
+        <div style="background: rgba(0, 0, 0, 0.5); ">
+            <div class="row justify-content-center align-items-center text-center " style="min-height: 200px;">
+                <div class="col-xl-8 col-lg-9 col-md-10 col-11">
+                    <h1 class="title text-white mt-md-5 mb-2 ">Welcome to <strong>LANDFALL</strong></h1>
+                    <p class=" mb-md-5 text-light px-md-5 ">
+                        東工大の研究室は、科学研究に対する情熱にあふれています。知りたいな、ワクワクする、すごいなぁ。そんな気持ちを大切に、最先端の研究が行われる研究室の様子、覗いてみませんか。
                     </p>
                 </div>
             </div>
         </div>
     </header>
-
-    <!--基本の型　下のものをシンプルにしたテンプレートです-->
-    <div class="container-md">
-        <div class="d-flex flex-row flex-wrap">
-            <!--固定-->
-            <!--横のシート配列-->
-            <div class="my-box align-self-stretch w-100  order-1">
-                <!--幅と順番-->
-                <div class="d-flex flex-column h-100">
-                    <!--固定-->
-                    <!--縦のシート配列-->
-                    <div class="my-box flex-fill bg-white mb-3 mr-3">
-                        <!--flex-fillの有無　背景色　シートのスペース-->
-                        <div class="row mr-0 ml-0 h-100">
-                            <!--固定-->
-                            <!--コンテンツのグリッド配列-->
-                            <div class="col-12 p-3 border">
-                                <!--この中にコンテンツをいれる-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- page content1-->
-    <div class="px-0">
-        <div class="container-md">
-            <div class="d-flex flex-row flex-wrap">
-                <!--固定-->
-                <!--横のシート配列-->
-                <div class="my-box align-self-stretch w-100 w-md-75  order-1">
-                    <!--幅と順番-->
-                    <div class="d-flex flex-column h-100">
-                        <!--固定-->
-                        <!--縦のシート配列-->
-                        <div class="my-box flex-fill bg-white mb-3 mr-3">
-                            <!--flex-fillの有無　背景色　シートのスペース-->
-                            <div class="row mr-0 ml-0 h-100">
-                                <!--固定-->
-                                <!--コンテンツのグリッド配列-->
-                                <div class="col-12 p-3 border">
-                                    <!--この中にコンテンツをいれる-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-box align-self-stretch w-100 order-2">
-                    <!--幅と順番-->
-                    <div class="d-flex flex-column h-100">
-                        <!--固定-->
-                        <!--縦のシート配列-->
-                        <div class="my-box bg-white mb-3 mr-3">
-                            <!--flex-fillの有無　背景色　シートのスペース-->
-                            <div class="row mr-0 ml-0 h-100 no-gutters">
-                                <!--固定-->
-                                <div class="col-12 bg-dark text-white text-center py-1">
-                                    <h2> 記事を読む</h2>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                                    <div class="card shadow text-white">
-                                        <a href="sci.html"><img src="https://www.titech.ac.jp/about/organization/schools/img/tit_list01.jpg" class="img-fluid card-img" alt="理学院"></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6">
-                                    <div class="card shadow" style="width: 100%;">
-                                        <a href="sci.html">
-                                            <img src="img/board-4855963_640.jpg" class="img-fluid card-img" alt="工学院">
-                                            <div class=" card-img-overlay">
-                                                <h3 class="card-title text-white">理学院</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6">
-                                    <div class="card shadow">
-                                        <a href="sci.html"><img src="https://www.titech.ac.jp/about/organization/schools/img/tit_list03.jpg" class="img-fluid card-img" alt="物質理工学院"></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6">
-                                    <div class="card shadow">
-                                        <a href="sci.html"><img src="https://www.titech.ac.jp/about/organization/schools/img/tit_list04.jpg" class="img-fluid card-img" alt="情報理工学院"></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6">
-                                    <div class="card shadow">
-                                        <a href="sci.html"><img src="https://www.titech.ac.jp/about/organization/schools/img/tit_list05.jpg" class="img-fluid card-img" alt="生命理工学院"></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-6">
-                                    <div class="card shadow">
-                                        <a href="sci.html"><img src="https://www.titech.ac.jp/about/organization/schools/img/tit_list06.jpg" class="img-fluid card-img" alt="環境・社会理工学院"></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card shadow">
-                                        <a href="articles.html">
-                                            <div style="height: 100px; background: rgb(255, 255, 121);" 　>一覧へ</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!--コンテンツのグリッド配列-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Page Content2 -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-9 mb-5">
-                <h2>News</h2>
-                <hr>
-
-                <h6><small>2020/03/09</small> <b>新歓ページを公開しました</b></h6>
-                <p>新入生の皆さん、東工大合格おめでとうございます。<br> LANDFALL編集委員会の <a href="welcome.html">新歓ページ <i class="fas fa-external-link-alt"></i></a> を公開しました。私たちの活動に少しでも興味を持ってくださった方はぜひ覗いてみてください。皆さんの入部を心待ちにしています。
-                </p>
-
-                <h6><small>2020/03/01</small> <b>LANDFALLWEB一時閉鎖のお詫び</b></h6>
-                <p>本日まで長期間、LANDFALLWEBにアクセスできない状況になっておりました。 LANDFALLWEBを利用していただいていた方々、またインタビューにご協力していただいた先生方にご迷惑をおかけしてしまい、大変申し訳ありませんでした。 今後このような事が起こらないように注意をしていくとともに、よりよいLANDFALLWEBを目指していきたいと思います。今後ともよろしくお願いいたします。
-                </p>
-
-                <h6><small>2020/03/01</small> <b>WEBサイトをリニューアルしました</b></h6>
-                <p>このたび、LANDFALL編集委員会のWEBサイトが<a href="https://landfaller.com/">landfaller.com</a>にてリニューアルオープンいたしました。</p>
-
-            </div>
-
-
-            <div class="col-md-3 mb-5">
-                <h2>Twitter</h2>
-                <hr>
-                <a class="twitter-timeline" data-lang="ja" data-height="400" data-chrome="noheader nofooter noborder" data-dnt="true" data-theme="light" href="https://twitter.com/LANDFALL_PR?ref_src=twsrc%5Etfw">Tweets by
-          LANDFALL_PR</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
-
-
-
-            <div class="col-md-6 mb-3">
-                <div class="card h-100">
-                    <img class="card-img-top" src="https://landfaller.com/test2/img/92_cover_all.jpg" alt="" loading="lazy">
-                    <div class="card-body">
-                        <h4 class="card-title">LANDFALL</h4>
-                        <p class="card-text">
-                            研究室で行われていることをわかりやすく、親しみやすく紹介したい。ランドフォールは、そんな思いで学生が作っている冊子です。最新刊は92号です。全ての過去記事をWEB上で公開しています。</p>
-                        <a href="articles.html" class="btn btn-block btn-primary">記事を読む &raquo;</a>
+        <div class="row px-2">
+            <!--main-->
+            <div class="col-lg-8 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <h2 class="col-12 title1 h3 ">最新記事</h2>
+                        </div>
                     </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/tec.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/92_cover_all.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/bio.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/tw-1920.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/tec.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/env.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/tec.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/bio.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/inf.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border ">
+                                    <div class="col-6" style="background:url('img/std.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">工学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">100号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>リアルタイムでの大規模データ処理</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">鈴木&nbsp豊太郎&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="my-0"> 近年、ネットワーク技術の進歩やさまざまな通信機器の普及により、私たちは大量の情報をリアルタイムで受け取れるようになった。 時々刻々と送られてくる大量の情報をリアルタイ ムで扱うために、データストリーム処理という新たなデータ処理が注目されて いる。データストリーム 処理は、送られてくるデータを逐次的に処理することで、リアルタイムでのデータ処理を可能とする。 鈴村研究室では、データストリーム処理のソフトウェアを設計することを想定し、その上で浮かび上がってくるさまざまな課題を研究している。
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-3 " style="height: 100px;">
+                            <div class="col-12 shadow ">
+                                <nav class="cp_navi">
+                                    <div class="cp_pagination">
+                                        <a class="cp_pagenum prev" href="#">prev</a>
+                                        <span aria-current="page" class="cp_pagenum current">1</span>
+                                        <a class="cp_pagenum" href="#">2</a>
+                                        <a class="cp_pagenum" href="#">3</a>
+                                        <a class="cp_pagenum" href="#">4</a>
+                                        <a class="cp_pagenum" href="#">5</a>
+                                        <a class="cp_pagenum" href="#">6</a>
+                                        <a class="cp_pagenum" href="#">7</a>
+                                        <a class="cp_pagenum" href="#">8</a>
+                                        <a class="cp_pagenum" href="#">9</a>
+                                        <a class="cp_pagenum" href="#">10</a>
+                                        <a class="cp_pagenum next" href="#">next</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <!--aside-->
+            <div class="col-lg-4 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row pb-1 pr-1" style="height: 100%;">
+                            <h2 class="col-12 title1 h3 ">人気記事</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-1" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border border">
 
-            <div class="col-md-6 mb-3">
-                <div class="card">
-                    <img class="card-img-top" src="https://landfaller.com/test2/img/tokowalker_1920.jpg" alt="" loading="lazy">
-                    <div class="card-body">
-                        <h4 class="card-title">TOKO WALKER</h4>
-                        <p class="card-text">全ての新入生にお配りしている情報誌『TOKO WALKER』の作成も行っています。毎年4月に発行し、入学時にお渡ししています。</p>
+                                    <div class="col-12" style="background:url('img/sci.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">理学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">97号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>夢の反応を目指して</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">岩澤・鷹谷&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-1" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border border">
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="mt-0 mb-1"> 岩澤・鷹谷では、遷移金属錯体を用いて新しい有機合成反応を開発する研究を行なっている。 その中でも本稿では、遷移金属錯体を 用いた触媒的な二酸化炭素の固定化反応と、 ボロン酸エステルの動的自己組織化に焦点を当てて紹介する。 そして、先生方と有機化学の出会いや、研究活動の原動力についても触れる。
+                                        </div>
+                                    </div>
+                                    <div class="col-6" style="background:url('img/sci.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">理学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">97号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>夢の反応を目指して</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">岩澤・鷹谷&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-1" style="height: 100%;">
+                            <div class="col-12 shadow ">
+                                <a href="#" class="row btn-flat-border border">
+                                    <div class="col-6 p-3" style="max-height: 150px;">
+                                        <div class="item-c">
+                                            <h5>概要</h5>
+                                            <hr class="mt-0 mb-1"> 岩澤・鷹谷では、遷移金属錯体を用いて新しい有機合成反応を開発する研究を行なっている。 その中でも本稿では、遷移金属錯体を 用いた触媒的な二酸化炭素の固定化反応と、 ボロン酸エステルの動的自己組織化に焦点を当てて紹介する。 そして、先生方と有機化学の出会いや、研究活動の原動力についても触れる。
+                                        </div>
+                                    </div>
+                                    <div class="col-6" style="background:url('img/sci.jpg');background-size:140%;background-position-y:center ;">
+                                        <div class="row itembox justify-content-center align-items-center " style="background: rgba(0, 0, 0, 0.5);">
+                                            <div class="col-12 p-3 text-white">
+                                                <span class="h5"><span class="badge badge-pill badge-primary ">理学院</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-info ">97号</span>
+                                                </span>
+                                                <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                                </span>
+                                                <h3 class="h5 mt-2 mb-1"><strong>夢の反応を目指して</strong></h3>
+                                                <p class="text-right mt-2 h6 text-white">岩澤・鷹谷&nbsp研究室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-0 pr-1" style="height: 100%;">
+                            <h2 class="col-12 title1 h3 ">分野から探す</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-1" style="height: 100%;">
+                            <div class="col-12 shadow bg-white">
+                                <ul class="cp_list">
+                                    <li class="">理学院</li>
+                                    <li class="">工学院</li>
+                                    <li class="">物質理工学院</li>
+                                    <li class="">情報理工学院</li>
+                                    <li class="">生命理工学院</li>
+                                    <li class="">環境社会理工学院</li>
+                                    <li class="">特別企画など</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-0 pr-1" style="height: 100%;">
+                            <h2 class="col-12 title1 h3 ">号数から探す</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-1" style="height: 100%;">
+                            <div class="col-12 shadow bg-white">
+                                <ul class="cp_list">
+                                    <li class="">80～号</li>
+                                    <li class="">61~70号</li>
+                                    <li class="">41~60号</li>
+                                    <li class="">21~40号</li>
+                                    <li class="">0~20号</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-0 pr-1" style="height: 100%;">
+                            <h2 class="col-12 title1 h3 ">TWITTER</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-0 pr-1" style="height: 100%;">
+                            <div class="col-12 shadow p-2 bg-white">
+
+                                <a class="twitter-timeline" data-lang="ja" data-height="400" data-chrome="noheader nofooter noborder" data-dnt="true" data-theme="light" href="https://twitter.com/LANDFALL_PR?ref_src=twsrc%5Etfw">Tweets by
+                                    LANDFALL_PR</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.row -->
-
-
-
-
-
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-3 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; LANDFALL編集委員会</p>
-        </div>
-        <!-- /.container -->
+    <footer class="py-3 bg-dark text-white text-center mt-2">
+        <ul class=" footlist ">
+            <li><a href="# ">Home</a></li>
+            <li><a href="# ">LANDFALLとは</a></li>
+            <li><a href="# ">記事を探す</a></li>
+            <li><a href="# ">当サイトの利用について</a></li>
+        </ul>
+        Copyright &copy; LANDFALL編集委員会
     </footer>
     <!-- Bootstrap core JavaScript
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
     -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 
 </body>
 
