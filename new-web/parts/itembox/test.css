@@ -2,7 +2,34 @@ body {
     padding-top: 100px;
 }
 
+
+/* アイテムボックス　ここから */
+
+.item-warp {
+    text-decoration: none;
+    background: #ffffff;
+    color: #000000;
+    transition: .5s;
+}
+
+.item-warp:hover {
+    text-decoration: none;
+    background: #bdbdbd3d;
+    color: rgb(0, 0, 0);
+}
+
+.item-warp:hover .itembox {
+    background: rgba(0, 0, 0, 0.219);
+    transition: .5s;
+}
+
+.item-img {
+    background-size: 100% !important;
+    background-position-y: center !important;
+}
+
 .itembox {
+    background: rgba(0, 0, 0, 0.5);
     min-height: 150px;
 }
 
@@ -30,82 +57,5 @@ body {
     }
 }
 
-.tag-text {
-    font-size: 1.2rem;
-}
 
-.item-link:link {
-    background: rgb(238, 52, 52);
-}
-
-.item-link:visited {
-    color: rgba(255, 255, 255, 0.575);
-}
-
-.item-link:hover {
-    background: #44fff6;
-}
-
-.item-link:active {
-    color: #5581d3;
-}
-
-@media (min-width: 576px) {
-    .w-sm-25 {
-        width: 25% !important;
-    }
-    .w-sm-50 {
-        width: 50% !important;
-    }
-    .w-sm-75 {
-        width: 75% !important;
-    }
-    .w-sm-100 {
-        width: 100% !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .w-md-25 {
-        width: 25% !important;
-    }
-    .w-md-50 {
-        width: 50% !important;
-    }
-    .w-md-75 {
-        width: 75% !important;
-    }
-    .w-md-100 {
-        width: 100% !important;
-    }
-}
-
-@media (min-width: 992px) {
-    .w-lg-25 {
-        width: 25% !important;
-    }
-    .w-lg-50 {
-        width: 50% !important;
-    }
-    .w-lg-75 {
-        width: 75% !important;
-    }
-    .w-lg-100 {
-        width: 100% !important;
-    }
-}
-
-@media (min-width: 1200px) {
-    .w-xl-25 {
-        width: 25% !important;
-    }
-    .w-xl-50 {
-        width: 50% !important;
-    }
-    .w-xl-75 {
-        width: 75% !important;
-    }
-    .w-xl-100 {
-        width: 100% !important;
-    }
-}
+/* アイテムボックス　ここまで */
