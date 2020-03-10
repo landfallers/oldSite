@@ -1,3 +1,8 @@
+.multicolumnbox {
+    column-count: 2;
+    column-gap: 30px;
+}
+
 .breadcrumb {
     background: transparent;
 }
@@ -280,6 +285,46 @@ ul.cp_list li:last-of-type {
 
 
 /* リストここまで */
+
+
+/* tlistここから */
+
+ul.tlist {
+    padding: 0.2em;
+    list-style-type: none;
+}
+
+ul.tlist li {
+    position: relative;
+    padding: 0em 0.6em 0.6em 1.3em;
+}
+
+ul.tlist li:before {
+    position: absolute;
+    content: '';
+    top: 0.3em;
+    left: 0.2em;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 6px;
+    border-color: transparent rgb(0, 0, 0);
+}
+
+ul.tlist li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000000;
+    transition: .3s;
+}
+
+ul.tlist li a:hover {
+    text-decoration: none;
+    color: #b9b9b9;
+}
+
+
+/* tlistここまで */
 
 
 /* footerここから */
