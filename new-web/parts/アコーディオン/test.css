@@ -1,80 +1,5 @@
-/*ボックス全体*/
-
-.accbox {
-    margin: 2em 0;
-    padding: 0;
-    max-width: 400px;
-    /*最大幅*/
-}
-
-
-/*ラベル*/
-
-.accbox label {
-    display: block;
-    margin: 1.5px 0;
-    padding: 13px 12px;
-    color: #ffba47;
-    font-weight: bold;
-    background: #26ff00;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-
-/*アイコンを表示*/
-
-.accbox label:before {
-    content: '\f054';
-    font-family: 'FontAwesome';
-    padding-right: 8px;
-}
-
-
-/*ラベルホバー時*/
-
-.accbox label:hover {
-    background: #ffe9a9;
-}
-
-
-/*チェックは隠す*/
-
-.accbox input {
+.inp {
     display: none;
-}
-
-
-/*中身を非表示にしておく*/
-
-.accbox .accshow {
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.8s;
-}
-
-
-/*クリックで中身表示*/
-
-.cssacc:checked+label+.accshow {
-    height: auto;
-    padding: 5px;
-    background: #ff0000;
-    opacity: 1;
-}
-
-.accbox .accshow p {
-    margin: 15px 10px
-}
-
-
-/*アイコンを入れ替える*/
-
-.cssacc:checked+label {
-    background: blue;
-    content: '\f078';
 }
 
 .h-box .h-cont {
@@ -85,21 +10,29 @@
     transition: 0.8s;
 }
 
-.inp:checked+.h-cont {
-    height: auto;
-    padding: 5px;
-    background: #ff0000;
+.inp:checked+label {
+    padding: 0px;
+    background: #00eaff;
     opacity: 1;
 }
 
 #la1:checked~.x {
-    background-color: #26ff00;
+    height: auto;
+    padding: 0px;
+    background: #ff0000;
+    opacity: 1;
 }
 
 #la2:checked~.y {
-    background-color: #26ff00;
+    height: auto;
+    padding: 0px;
+    background: #ff0000;
+    opacity: 1;
 }
 
 #la3:checked~.z {
+    height: 20px;
+    padding: 0px;
+    opacity: 1;
     background-color: #26ff00;
 }
