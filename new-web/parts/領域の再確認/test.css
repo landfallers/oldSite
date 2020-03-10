@@ -1,0 +1,164 @@
+        body {
+            background: #f3f3f3;
+        }
+        
+        h2 {
+            color: #364e96;
+            /*文字色*/
+            padding: 0.3em 1em;
+            /*上下の余白*/
+            border-bottom: solid 3px #364e96;
+            /*下線*/
+        }
+        
+        p {
+            padding-left: -1em;
+            text-indent: 1em;
+        }
+        /*ヘッダー部分のcss関係*/
+        
+        .breadcrumb {
+            background: transparent;
+        }
+        
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: rgb(156, 156, 156);
+        }
+        
+        .breadcrumb-item a:hover {
+            text-decoration: none;
+            color: rgb(187, 185, 185);
+            transition: .2s;
+        }
+        
+        .breadcrumb-item a:active {
+            text-decoration: none;
+            color: rgb(121, 121, 121);
+        }
+        
+        header {
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        /* 背景のグラデーション https://webgradients.com/ ここから */
+        
+        .back1 {
+            background-image: linear-gradient(120deg, #ff5858 0%, #f09819 100%);
+        }
+        
+        .back2 {
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+            background-blend-mode: multiply;
+        }
+        
+        .back3 {
+            background-image: linear-gradient(to left, #0acffe 0%, #495aff 100%);
+        }
+        
+        .back4 {
+            background-image: linear-gradient(to right, #f77062 0%, #fe5196 100%);
+        }
+        /* 画像を背景にする*/
+        /* 背景のグラデーション ここまで */
+        /* headerについて　ここから */
+        
+        .title {
+            font-size: 2.0rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+        
+        @media(min-width:544px) {
+            .title {
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 1.2;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .title {
+                font-size: 3rem;
+                font-weight: 300;
+                line-height: 1.2;
+            }
+        }
+        /* headerについて ここまで */
+        /* find-articlサイド　ここから */
+        
+        .itembox-u {
+            height: 60px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .itembox-u:hover {
+            text-decoration: none;
+            color: rgb(207, 207, 207);
+            background: rgba(65, 65, 65, 0.514);
+            transition: .5s;
+        }
+        
+        .itembox-u:active {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background: rgba(65, 65, 65, 0.31);
+        }
+        /* find-articlサイド　ここまで */
+        /* サイドボックス　ここから（普通のものと共有部分あり、こちらを優先） */
+        
+        .item-warp {
+            text-decoration: none;
+            background: #ffffff;
+            color: #000000;
+            transition: .5s;
+        }
+        
+        .item-warp:hover {
+            text-decoration: none;
+            background: #bdbdbd3d;
+            color: rgb(0, 0, 0);
+        }
+        
+        .item-warp:hover .itembox {
+            background: rgba(0, 0, 0, 0.219);
+            transition: .5s;
+        }
+        
+        .item-img {
+            background-size: 140% !important;
+            background-position-y: center !important;
+        }
+        
+        .itembox {
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 150px;
+        }
+        
+        @media(min-width:992px) {
+            .itembox {
+                height: 200px;
+            }
+        }
+        
+        .side {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 110px;
+        }
+        
+        @media(min-width:992px) {
+            .side {
+                height: 130px;
+            }
+        }
+        
+        .item-warp:hover .side {
+            color: #dddddd;
+        }
+        
+        .item-warp:active .side {
+            color: #fffbfb;
+        }
+        /* アイテムボックス　ここまで */
