@@ -1,49 +1,56 @@
-/* サイドボックス　ここから（普通のものと共有部分あり、こちらを優先） */
-
-.item-warp {
-    text-decoration: none;
-    background: #ffffff;
-    color: #000000;
-    transition: .5s;
-}
-
-.item-warp:hover {
-    text-decoration: none;
-    background: #bdbdbd3d;
-    color: rgb(0, 0, 0);
-}
-
-.item-warp:hover .itembox {
-    background: rgba(0, 0, 0, 0.219);
-    transition: .5s;
-}
-
-.item-img {
-    background-size: 140% !important;
-    background-position-y: center !important;
-}
-
-.itembox {
-    background: rgba(0, 0, 0, 0.5);
-    min-height: 150px;
-}
-
-@media(min-width:992px) {
-    .itembox {
-        height: 200px;
-    }
-}
-
-.side {
-    background: rgba(0, 0, 0, 0.5);
-    min-height: 110px;
-}
-
-@media(min-width:992px) {
-    .side {
-        height: 130px;
-    }
-}
-
-
-/* アイテムボックス　ここまで */
+   /* サイドボックス　ここから（普通のものと共有部分あり、こちらを優先） */
+   
+   .item-warp {
+       text-decoration: none;
+       background: #ffffff;
+       color: #000000;
+       transition: .5s;
+   }
+   
+   .item-warp:hover {
+       text-decoration: none;
+       background: #bdbdbd3d;
+       color: rgb(0, 0, 0);
+   }
+   
+   .item-warp:hover .itembox {
+       background: rgba(0, 0, 0, 0.219);
+       transition: .5s;
+   }
+   
+   .item-img {
+       background-size: 140% !important;
+       background-position-y: center !important;
+   }
+   
+   .itembox {
+       background: rgba(0, 0, 0, 0.5);
+       min-height: 150px;
+   }
+   
+   @media(min-width:992px) {
+       .itembox {
+           height: 200px;
+       }
+   }
+   
+   .side {
+       color: #fff;
+       background: rgba(0, 0, 0, 0.5);
+       min-height: 110px;
+   }
+   
+   @media(min-width:992px) {
+       .side {
+           height: 130px;
+       }
+   }
+   
+   .item-warp:hover .side {
+       color: #dddddd;
+   }
+   
+   .item-warp:active .side {
+       color: #fffbfb;
+   }
+   /* アイテムボックス　ここまで */
