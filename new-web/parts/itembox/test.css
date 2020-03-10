@@ -18,8 +18,19 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.item-warp:active {
+    text-decoration: none;
+    background: #bdbdbd00;
+    color: rgb(0, 0, 0);
+}
+
 .item-warp:hover .itembox {
     background: rgba(0, 0, 0, 0.219);
+    transition: .5s;
+}
+
+.item-warp:active .itembox {
+    background: rgba(0, 0, 0, 0);
     transition: .5s;
 }
 
