@@ -1,0 +1,18 @@
+.itembox-u {
+    height: 60px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.itembox-u:hover {
+    text-decoration: none;
+    color: rgb(129, 255, 255);
+    background: rgba(65, 65, 65, 0.514);
+    transition: .5s;
+}
+
+.itembox-u:active {
+    text-decoration: none;
+    color: rgb(0, 255, 149);
+    background: rgba(65, 65, 65, 0.31);
+}
