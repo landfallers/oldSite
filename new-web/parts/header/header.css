@@ -6,13 +6,18 @@
     
     .breadcrumb-item a {
         text-decoration: none;
-        color: rgb(119, 119, 119);
+        color: rgb(156, 156, 156);
     }
     
     .breadcrumb-item a:hover {
         text-decoration: none;
-        color: rgb(212, 212, 212);
+        color: rgb(187, 185, 185);
         transition: .2s;
+    }
+    
+    .breadcrumb-item a:active {
+        text-decoration: none;
+        color: rgb(121, 121, 121);
     }
     
     header {
