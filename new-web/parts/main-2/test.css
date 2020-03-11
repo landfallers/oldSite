@@ -155,6 +155,11 @@
             text-decoration: none;
             color: #b9b9b9;
         }
+        
+        ul.tlist li a:active {
+            text-emphasis: none;
+            color: #dddddd;
+        }
         /* pdfアーカイブの部分ここまで */
         /* 記事を探すの特殊部分 ここまで*/
         /* アイテムボックス　ここから */
