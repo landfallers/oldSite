@@ -1,0 +1,408 @@
+        body {
+            background: #f3f3f3;
+        }
+        
+        h2 {
+            color: #364e96;
+            /*文字色*/
+            padding: 0.3em 1em;
+            /*上下の余白*/
+            border-bottom: solid 3px #364e96;
+            /*下線*/
+        }
+        
+        p {
+            padding-left: -1em;
+            text-indent: 1em;
+        }
+        /*ヘッダー部分のcss関係*/
+        
+        .breadcrumb {
+            background: transparent;
+        }
+        
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: rgb(156, 156, 156);
+        }
+        
+        .breadcrumb-item a:hover {
+            text-decoration: none;
+            color: rgb(187, 185, 185);
+            transition: .2s;
+        }
+        
+        .breadcrumb-item a:active {
+            text-decoration: none;
+            color: rgb(121, 121, 121);
+        }
+        
+        header {
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        /* 背景のグラデーション https://webgradients.com/ ここから */
+        
+        .back1 {
+            background-image: linear-gradient(120deg, #ff5858 0%, #f09819 100%);
+        }
+        
+        .back2 {
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+            background-blend-mode: multiply;
+        }
+        
+        .back3 {
+            background-image: linear-gradient(to left, #0acffe 0%, #495aff 100%);
+        }
+        
+        .back4 {
+            background-image: linear-gradient(to right, #f77062 0%, #fe5196 100%);
+        }
+        /* 画像を背景にする*/
+        /* 背景のグラデーション ここまで */
+        /* headerについて　ここから */
+        
+        .title {
+            font-size: 2.0rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+        
+        @media(min-width:544px) {
+            .title {
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 1.2;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .title {
+                font-size: 3rem;
+                font-weight: 300;
+                line-height: 1.2;
+            }
+        }
+        /* headerについて ここまで */
+        /* find-articlサイド　ここから */
+        
+        .itembox-u {
+            height: 60px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .itembox-u:hover {
+            text-decoration: none;
+            color: rgb(207, 207, 207);
+            background: rgba(65, 65, 65, 0.514);
+            transition: .5s;
+        }
+        
+        .itembox-u:active {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background: rgba(65, 65, 65, 0.31);
+        }
+        /* find-articlサイド　ここまで */
+        /* 記事を探すの特殊部分 ここから*/
+        
+        .find-a .itembox-u {
+            height: 80px;
+        }
+        
+        @media(min-width: 576px) {
+            .find-a .itembox-u {
+                height: 100px;
+            }
+            .find-a .h6 {
+                font-size: 1.3rem;
+            }
+        }
+        /* pdfアーカイブの部分ここから */
+        
+        ul.tlist {
+            padding: 0.2em;
+            list-style-type: none;
+        }
+        
+        ul.tlist li {
+            position: relative;
+            padding: 0em 0.6em 0.6em 1.3em;
+        }
+        
+        ul.tlist li:before {
+            position: absolute;
+            content: '';
+            top: 0.3em;
+            left: 0.2em;
+            height: 0;
+            width: 0;
+            border-style: solid;
+            border-width: 6px 0 6px 6px;
+            border-color: transparent rgb(0, 0, 0);
+        }
+        
+        ul.tlist li a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #000000;
+            transition: .3s;
+        }
+        
+        ul.tlist li a:hover {
+            text-decoration: none;
+            color: #b9b9b9;
+        }
+        
+        ul.tlist li a:active {
+            text-emphasis: none;
+            color: #dddddd;
+        }
+        /* pdfアーカイブの部分ここまで */
+        /* 記事を探すの特殊部分 ここまで*/
+        /* アイテムボックス　ここから */
+        
+        .item-warp {
+            text-decoration: none;
+            background: #ffffff;
+            color: #000000;
+            transition: .5s;
+        }
+        
+        .item-warp:hover {
+            text-decoration: none;
+            background: #bdbdbd3d;
+            color: rgb(0, 0, 0);
+        }
+        
+        .item-warp:active {
+            text-decoration: none;
+            background: #bdbdbd00;
+            color: rgb(0, 0, 0);
+        }
+        
+        .item-warp:hover .itembox {
+            background: rgba(0, 0, 0, 0.219);
+            transition: .5s;
+        }
+        
+        .item-warp:active .itembox {
+            background: rgba(0, 0, 0, 0);
+            transition: .5s;
+        }
+        
+        .item-img {
+            background-size: 100% !important;
+            background-position-y: center !important;
+        }
+        
+        .itembox {
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 150px;
+        }
+        
+        @media(min-width:992px) {
+            .itembox {
+                height: 200px;
+            }
+        }
+        
+        .item-c {
+            max-height: 130px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+        
+        @media(min-width:992px) {
+            .item-c {
+                max-height: 180px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 6;
+                overflow: hidden;
+            }
+        }
+        /* アイテムボックス　ここまで */
+        /* サイドボックス　ここから（普通のものと共有部分あり、こちらを優先） */
+        
+        .side {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 110px;
+        }
+        
+        @media(min-width:992px) {
+            .side {
+                height: 130px;
+            }
+        }
+        
+        .item-warp:hover .side {
+            color: #dddddd;
+        }
+        
+        .item-warp:active .side {
+            color: #fffbfb;
+        }
+        /* アイテムボックス　ここまで */
+        /* ページナビ　ここから */
+        
+        nav.page_nav *,
+        nav.page_nav *:after,
+        nav.page_nav *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        nav.page_nav a {
+            text-decoration: none;
+        }
+        
+        nav.page_nav {
+            margin: 0.2em 0;
+            text-align: center;
+        }
+        
+        .page_nav .pnav_box {
+            display: inline-block;
+            margin-top: 0.3em;
+            padding: 0 0.5em;
+        }
+        
+        .page_nav .nav_n {
+            font-size: 1em;
+            line-height: 50px;
+            display: block;
+            float: left;
+            transition: 400ms ease;
+            letter-spacing: 0.1em;
+            color: #37474F;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: auto .5em;
+        }
+        
+        .page_nav .nav_n:hover,
+        .page_nav .nav_n.current {
+            font-weight: bold;
+            color: #ffffff;
+            background-color: rgb(64, 196, 236);
+            border-radius: 50%;
+        }
+        
+        .page_nav .nav_n.prev:hover,
+        .page_nav .nav_n.next:hover {
+            color: rgb(64, 196, 236);
+            background-color: transparent;
+            border-radius: 50%;
+        }
+        
+        @media only screen and (max-width: 960px) {
+            .page_nav .pnav_box {
+                margin-top: 50px;
+                padding: 0 10px;
+            }
+            .page_nav .nav_n {
+                font-size: 0.8em;
+                line-height: 25px;
+                width: 45px;
+                height: 25px;
+                margin: auto .1em;
+                border-radius: 0.3em;
+            }
+            .page_nav .nav_n.prev,
+            .page_nav .nav_n.next {
+                padding: 0 25px 0 0;
+            }
+            .page_nav .nav_n:hover,
+            .page_nav .nav_n.current {
+                border-radius: 0.3em;
+            }
+            .page_nav .nav_n.prev:hover,
+            .page_nav .nav_n.next:hover {
+                border-radius: 0.3em;
+            }
+        }
+        
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+            .page_nav .nav_n {
+                display: none;
+                border-radius: 0.3em;
+            }
+            .page_nav .nav_n:nth-of-type(2) {
+                position: relative;
+                padding-right: 20px;
+            }
+            .page_nav .nav_n:nth-of-type(2)::after {
+                font-size: 1.2em;
+                position: absolute;
+                top: 0;
+                left: 25px;
+                content: '...';
+            }
+            .page_nav .nav_n:nth-child(-n+3),
+            .page_nav .nav_n:nth-last-child(-n+3) {
+                display: block;
+            }
+            .page_nav .nav_n:nth-last-child(-n+4) {
+                padding: 0 5px;
+            }
+            .page_nav .nav_n:nth-last-child(-n+4)::after {
+                content: none;
+            }
+            .page_nav .nav_n:hover,
+            .page_nav .nav_n.current {
+                border-radius: 0.3em;
+            }
+            .page_nav .nav_n.prev:hover,
+            .page_nav .nav_n.next:hover {
+                border-radius: 0.3em;
+            }
+        }
+        /* ページナビ　ここまで */
+        /* footerここから */
+        
+        footer ul.footlist {
+            padding: 0.1em;
+            list-style-type: none;
+        }
+        
+        footer ul.footlist li {
+            position: relative;
+            padding: 0em 0.3em 0.3em 1.3em;
+            display: inline;
+        }
+        
+        footer ul.footlist li:before {
+            position: absolute;
+            content: '';
+            top: 0.4em;
+            left: 0.2em;
+            height: 0;
+            width: 0;
+            border-style: solid;
+            border-width: 6px 0 6px 9px;
+            border-color: transparent transparent transparent rgb(255, 255, 255);
+        }
+        
+        footer ul.footlist li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: .2s;
+        }
+        
+        footer ul.footlist li a:hover {
+            text-decoration: none;
+            color: #e0e0e0;
+        }
+        
+        footer ul.footlist li a:active {
+            text-decoration: none;
+            color: #979797;
+        }
+        /* footerここまで */

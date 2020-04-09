@@ -1,0 +1,179 @@
+        body {
+            padding-top: 100px;
+        }
+        /* アイテムボックス　ここから */
+        
+        .item-warp {
+            text-decoration: none;
+            background: #ffffff;
+            color: #000000;
+            transition: .5s;
+        }
+        
+        .item-warp:hover {
+            text-decoration: none;
+            background: #bdbdbd3d;
+            color: rgb(0, 0, 0);
+        }
+        
+        .item-warp:active {
+            text-decoration: none;
+            background: #bdbdbd00;
+            color: rgb(0, 0, 0);
+        }
+        
+        .item-warp:hover .itembox {
+            background: rgba(0, 0, 0, 0.219);
+            transition: .5s;
+        }
+        
+        .item-warp:active .itembox {
+            background: rgba(0, 0, 0, 0);
+            transition: .5s;
+        }
+        
+        .item-img {
+            background-size: 100% !important;
+            background-position-y: center !important;
+        }
+        
+        .itembox {
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 150px;
+        }
+        
+        @media(min-width:992px) {
+            .itembox {
+                height: 200px;
+            }
+        }
+        
+        .item-c {
+            max-height: 130px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+        
+        @media(min-width:992px) {
+            .item-c {
+                max-height: 180px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 6;
+                overflow: hidden;
+            }
+        }
+        /* アイテムボックス　ここまで */
+        /* サイドボックス　ここから（普通のものと共有部分あり、こちらを優先） */
+        
+        .side {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 110px;
+        }
+        
+        @media(min-width:992px) {
+            .side {
+                height: 130px;
+            }
+        }
+        
+        .item-warp:hover .side {
+            color: #dddddd;
+        }
+        
+        .item-warp:active .side {
+            color: #fffbfb;
+        }
+        /* アイテムボックス　ここまで */
+        /* 記事を探す　ここから */
+        
+        .list-group-item {
+            padding-left: 2.3rem;
+            background: transparent;
+        }
+        
+        .list-group-item:hover {
+            background-color: #bdbdbd;
+            transition: .2s;
+        }
+        
+        .sci:before {
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+            top: 26%;
+            left: 0.5rem;
+            width: 23px;
+            height: 23px;
+            background: rgba(255, 0, 0, 0.507);
+        }
+        
+        .eng::before {
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+            top: 26%;
+            left: 0.5rem;
+            width: 23px;
+            height: 23px;
+            background: rgba(255, 255, 0, 0.507);
+        }
+        
+        .mat::before {
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+            top: 26%;
+            left: 0.5rem;
+            width: 23px;
+            height: 23px;
+            background: rgba(0, 255, 0, 0.507);
+        }
+        
+        .csc::before {
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+            top: 26%;
+            left: 0.5rem;
+            width: 23px;
+            height: 23px;
+            background: rgba(0, 255, 255, 0.507);
+        }
+        
+        .bio::before {
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+            top: 26%;
+            left: 0.5rem;
+            width: 23px;
+            height: 23px;
+            background: rgba(0, 0, 255, 0.507);
+        }
+        
+        .env::before {
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+            top: 26%;
+            left: 0.5rem;
+            width: 23px;
+            height: 23px;
+            background: rgba(255, 0, 255, 0.507);
+        }
+        
+        .find_as::before {
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+            top: 26%;
+            left: 0.5rem;
+            width: 23px;
+            height: 23px;
+            background: rgba(255, 0, 128, 0.507);
+        }
+        /* 記事を探す　ここまで */

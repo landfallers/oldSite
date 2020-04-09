@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="各分野ごとの東工大研究室の記事を探せます。">
+    <title>記事を探す ―東京工業大学の研究室紹介サイト</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link href="https://landfaller.com/decoration/custom.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://landfaller.com/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://landfaller.com/img/main_1/favicon.ico">
+</head>
+
+<body style="background-color: #e9e9e9;">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark back2 fixed-top" style="background-color: #222222;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://landfaller.com/index.html">東京工業大学LANDFALL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://landfaller.com/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://landfaller.com/about_landfall.html">LANDFALLとは</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://landfaller.com/find_articles.html">記事を探す</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class=" mb-2 back3">
+        <div style="background: rgba(0, 0, 0, 0.5); ">
+            <div class="container">
+                <div class="row justify-content-center text-center " style="min-height: 200px;">
+                    <nav class="col-12 " aria-label="breadcrumb">
+                        <ol class="breadcrumb h5 mb-0">
+                            <li class="breadcrumb-item "><a href="https://landfaller.com/index.html">Home</a></li>
+                            <li class="breadcrumb-item"></li>
+                        </ol>
+                    </nav>
+                    <div class="col-11">
+                        <h1 class="title text-white mt-md-5 mb-2 "><strong>記事を探す</strong></h1>
+                        <p class=" mb-md-5 text-light px-md-5 ">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row px-1">
+            <!--main-->
+            <div class="col-lg-9 col-md-8">
+                <div class="row mr-md-3 mb-3 px-3 find-a bg-white">
+                    <!--記事を探すのページはfind-aを入れるのをわすれない-->
+                    <h2 class="col-12 title1 h3 ">学院から探す</h2>
+                    <a href="https://landfaller.com/find_articles/bio.html" class="col-4" style="background: radial-gradient(circle, rgba(64,64,255,1) 0%, rgba(0,0,130,1) 100%);">
+                        <div class="row itembox-u justify-content-center align-items-center ">
+                            <div class="col-12 px-0 text-center h6">
+                                <strong>
+                                                生命理工学院
+                                            </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://landfaller.com/find_articles/csc.html" class="col-4" style="background: radial-gradient(circle, rgba(64,255,255,1) 0%, rgba(0,129,129,1) 100%);">
+                        <div class="row itembox-u justify-content-center align-items-center ">
+                            <div class="col-12 px-0 text-center h6">
+                                <strong>
+                                                情報理工学院
+                                            </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://landfaller.com/find_articles/mat.html" class="col-4" style="background: radial-gradient(circle, rgba(65,255,64,1) 0%, rgba(0,128,0,1) 100%);">
+                        <div class="row itembox-u justify-content-center align-items-center ">
+                            <div class="col-12 px-0 text-center h6">
+                                <strong>
+                                                物質理工学院
+                                            </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://landfaller.com/find_articles/env.html" class="col-6" style="background: radial-gradient(circle, rgba(255,64,255,1) 0%, rgba(128,0,128,1) 100%);">
+                        <div class="row itembox-u justify-content-center  align-items-center">
+                            <div class="col-12 px-0 text-center h6 ">
+                                <strong>
+                                                環境社会理工学院
+                                            </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://landfaller.com/find_articles/sci.html" class="col-3" style="background: radial-gradient(circle, rgba(255,65,65,1) 0%, rgba(128,0,0,1) 100%);">
+                        <div class="row itembox-u justify-content-center align-items-center ">
+                            <div class="col-12 px-0 text-center h6">
+                                <strong>
+                                                理学院
+                                            </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://landfaller.com/find_articles/eng.html" class="col-3" style="background: radial-gradient(circle, rgba(255,255,65,1) 0%, rgba(128,128,0,1) 100%);">
+                        <div class="row itembox-u justify-content-center align-items-center ">
+                            <div class="col-12 px-0 text-center h6">
+                                <strong>
+                                                工学院
+                                            </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="col-12">
+                        <div class="row pb-1 pr-1 " style="height: 100%;">
+                            <h2 class="col-12 title1 h3 ">PDFアーカイブ</h2>
+                        </div>
+                    </div>
+                    <ul class="px-2 nav nav-pills " role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="item1-tab" data-toggle="tab" href="#item1" role="tab" aria-controls="item1" aria-selected="true">91~92</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="item2-tab" data-toggle="tab" href="#item2" role="tab" aria-controls="item2" aria-selected="false">81〜90</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="item3-tab" data-toggle="tab" href="#item3" role="tab" aria-controls="item3" aria-selected="false">71〜80</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="item4-tab" data-toggle="tab" href="#item4" role="tab" aria-controls="item3" aria-selected="false">65〜70</a>
+                        </li>
+
+                    </ul>
+                    <div class="w-100 mb-2"></div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="item1" role="tabpanel" aria-labelledby="item1-tab">
+                            <h5>92号</h5>
+                            <ul class=" tlist ">
+                                <li><a href="https://landfaller.com/pdf/92/92-1-hayasi.pdf">
+                                    循環機能が魅せる健康 -林 直亨&nbsp研究室
+                                </a></li>
+                                <li><a href="https://landfaller.com/pdf/92/92-2-nohara.pdf">
+                                    異分野をつなぐ対話空間を -野原 佳代子&nbsp研究室
+                                </a></li>
+                                <li><a href="https://landfaller.com/pdf/92/92-3-miyake.pdf">
+                                    「間の合う」人とロボット -三宅 美博&nbsp研究室
+                                </a></li>
+                            </ul>
+
+
+                            <h5>91号</h5>
+                            <ul class=" tlist ">
+                                <li><a href="https://landfaller.com/pdf/91/91-1-yumiyama.pdf">
+                                    関与型調査で追い求めるより良い社会 -弓山 達也&nbsp研究室
+                                </a></li>
+                                <li><a href="https://landfaller.com/pdf/91/91-2-tamura.pdf">
+                                    風の流れを捉える、操るそして親しむ -田村 哲郎&nbsp研究室
+                                </a></li>
+                                <li><a href="https://landfaller.com/pdf/91/91-3-shinozaki.pdf">
+                                    音声認識システムの自律的学習を目指して -篠崎 隆宏&nbsp研究室
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="item2" role="tabpanel" aria-labelledby="item2-tab">
+                            <h5>90号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/90/90-1-kumai.pdf">
+                                強くて優しい社会基盤材料をつくる -熊井 真次
+                            &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/90/90-2-okusumi.pdf">
+                                シミュレーションで追う惑星の誕生 -奥住 聡
+                            &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/90/90-3-shiora.pdf">
+                                現代社会の最適解を探る -塩浦 昭義
+                            &nbsp研究室</a></li>
+                            </ul>
+                            <h5>89号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/89/89-1-ihara.pdf">
+                                エネルギー変換の新地平 -伊原 学
+                            &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/89/89-2-kitano.pdf">
+                                ありふれた元素から作る環境調和触媒 -北野 政明
+                            &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/89/89-3-kaneko.pdf">
+                                信頼・効率を生み出す符号化 -金子 晴彦
+                            &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/89/89-4-ono.pdf">
+                                進化計算で難問に挑む -小野 功
+                            &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/89/89-5-hukui.pdf">
+                                微生物の生命機能応用 -福居 俊昭
+                            &nbsp研究室</a></li>
+                            </ul>
+                            <h5>88号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/88/88-1-ito.pdf">
+                              視覚のない世界を捉える -伊藤 亜紗
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/88/88-2-tagawa.pdf">
+                              手のひらサイズの人工生命 -田川 陽一
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/88/88-3-tanaka.pdf">
+                              不斉を制御する触媒 -田中 健
+                          &nbsp研究室</a></li>
+                            </ul>
+                            <h5>87号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/87/87-1-akita.pdf">
+                              宇宙の過酷な環境を利用する -秋田 大輔
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/87/87-2-iwazaki-takaya.pdf">
+                              夢の反応を目指して -岩澤・鷹谷
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/87/87-3-serizawa.pdf">
+                              生体高分子の可能性 -芹澤 武
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/87/87-4-toyota.pdf">
+                              構造から視る化学の世界 -豊田 真司
+                          &nbsp研究室</a></li>
+                            </ul>
+                            <h5>86号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/86/86-1-kume.pdf">
+                              再生医療への足掛かり - 粂・白木
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/86/86-2-wachi.pdf">
+                              生命の真髄へと至る道 -和地 正明
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/86/86-3-tiba.pdf">
+                              世界を回すモータ -千葉 明
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/86/86-4-kurabayashi.pdf">
+                              生物に学ぶロボット制御 -倉林 大輔
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/86/86-5-ito.pdf">
+                              究極理論の完成へ -伊藤 克司
+                          &nbsp研究室</a></li>
+                            </ul>
+                            <h5>85号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/85/85-1-ota-shimozaki.pdf">
+                              藻類は“進化”する -太田・下嶋
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/85/85-2-ueno.pdf">
+                              タンパク質集合体に見出す新機能 -上野 隆史
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/85/85-3-hayamizu.pdf">
+                              ペプチドが描くエレクトロニクスの世界 -早水 裕平
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/85/85-4-ueda.pdf">
+                              金属のアンチエイジング -上田 光敏
+                          &nbsp研究室</a></li>
+                            </ul>
+                            <h5>84号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/84/84-1-yoshino.pdf">
+                              塑性加工で切り拓くナノテクの世界 -吉野 雅彦
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/84/84-2-kurokawa-nakajima-yamada.pdf">
+                              微生物ゲノムのその先へ -黒川・中島・山田
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/84/84-3-sakai-miyauchi.pdf">
+                              地球を長生きさせる材料 -坂井・宮内
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/84/84-4-okumura-takamatsu.pdf">
+                              「ことば」を工学する -奥村・高村
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/84/84-5-ishizone.pdf">
+                              新規ポリマーの合成で踏み出す第一歩 -石曽根 隆
+                          &nbsp研究室</a></li>
+                            </ul>
+                            <h5>83号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/83/83-1-yoshikawa.pdf">
+                              ごみが売れる時代へ -吉川 邦夫
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/83/83-2-goto.pdf">
+                              ボウル型分子で反応を解析する -後藤 敬
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/83/83-3-murakami.pdf">
+                              紙と鉛筆で現象を予言する -村上 修一
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/83/83-4-otani.pdf">
+                              目で起こる化学反応 -大谷 弘之
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/83/83-5-ochi.pdf">
+                              イオン液体が拓く材料の未来 -大内 幸雄
+                          &nbsp研究室</a></li>
+                            </ul>
+                            <h5>82号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/82/82-1-okawa.pdf">
+                              技術で輝く氷 -大河 誠司
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/82/82-2-arai-nishiyama.pdf">
+                              進化を支える光 -荒井・西山
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/82/82-3-yasuoka-takeuchi.pdf">
+                              よみがえれ水 -安岡・竹内
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/82/82-4-masui.pdf">
+                              未来の地球を代弁する -増井 利彦
+                          &nbsp研究室</a></li>
+                            </ul>
+                            <h5>81号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/81/81-1-nagata.pdf">
+                              酵母で匂いを見る -長田 俊哉
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/81/81-2-kawai.pdf">
+                              光で覗く化学の世界 -河合 明雄
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/81/81-3-inota.pdf">
+                              惑星系形成から生命を探す -井田 茂
+                          &nbsp研究室</a></li>
+                                <li><a href="https://landfaller.com/pdf/81/81-4-takahashi.pdf">
+                              ゼロからの研究開発 鉛ビスマス冷却高速炉 -高橋 実
+                          &nbsp研究室</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="item3" role="tabpanel" aria-labelledby="item3-tab">
+                            <h5>80号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/80/80-1-sasaki.pdf">
+                              社会を支える基盤を守る -佐々木 栄一&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/80/80-2-somiya.pdf">
+                              未知の可能性を秘める 重力波の検出 -宗宮 健太郎&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/80/80-3-tanaka-ikoma.pdf">
+                              材料工学から 医療の未来を照らす -田中・生駒&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/80/80-4-fujisaki.pdf">
+                              より高度で安全な暗号を 目指して -藤? 英一郎&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/80/80-5-hatano.pdf">
+                              デバイスの可能性 究極の素材ダイヤモンド -波多野 睦子&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>79号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/79/79-1-wakita.pdf">
+                              ビッグデータの先を見る -脇田 建&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/79/79-2-mori.pdf">
+                              今と未来を明るくする 有機エレクトロニクス -森 健彦&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/79/79-3-kashino.pdf">
+                              聞こえと無意識の科学 -柏野 牧夫&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>78号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/78/78-1-mishima.pdf">
+                                自覚・熱意・挑戦-三島新学長が語る理想の東工大像とは -三島 良直&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/78/78-2-yano.pdf">
+                                過酷環境材料が切り拓く未来 -矢野 豊彦&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/78/78-3-dohi.pdf">
+                                空間形成の新時代、来たる -土肥 真人&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/78/78-4-nakashima-matsumoto.pdf">
+                                地球を救う環境材料 -中島・松下&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/78/78-5-yamaguchi.pdf">
+                                宇宙を取り巻く謎に挑む -山口 昌英&nbsp研究室
+                            </a></li>
+                            </ul>
+                            <h5>77号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/77/77-1-fukusa.pdf">
+                              土木工学で変わる人々、 変えていく社会 -福田 大輔&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/77/77-2-gondo.pdf">
+                              バグの闇を照らす ソフトウェア工学の光 -権藤 克彦&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/77/77-3-ueda.pdf">
+                              明るい未来へ 分岐する高分子材料 -上田 充&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/77/77-4-hojo.pdf">
+                              歯車に魅せられて -北條 春夫&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>76号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/76/76-2-sanpei.pdf">
+                            不可能を可能にする 制御理論のために -三平 満司&nbsp研究室
+                        </a></li>
+                                <li><a href="https://landfaller.com/pdf/76/76-3-otomo.pdf">
+                            電子材料の未来を担う -大友 明&nbsp研究室
+                        </a></li>
+                                <li><a href="https://landfaller.com/pdf/76/76-4-sese.pdf">
+                            計算機で生き物を科学する -瀬々 潤&nbsp研究室
+                        </a></li>
+                            </ul>
+                            <h5>75号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/75/75-1-osatagi.pdf">
+                                そのとき、人が動いた -大佛 俊泰&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/75/75-2-tsukamoto.pdf">
+                                ふるまう人、自然、そして建築 -塚本 由晴&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/75/75-3-sato.pdf">
+                                高分子と水の不思議な世界 -佐藤 満&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/75/75-4-mizuno.pdf">
+                                迷えるあなたを導く最適化 -水野 眞治&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/75/75-5-aizawa.pdf">
+                                生命解析への革新的挑戦 -相澤 康則&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/75/75-6-ogata.pdf">
+                                暗号プロトコルが創り出す未来 -尾形 わかは&nbsp研究室
+                            </a></li>
+                            </ul>
+                            <h5>74号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/74/74-1-terano.pdf">
+                                仮想世界から現実を観る -寺野 隆雄&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/74/74-2-murakami.pdf">
+                                タンパク質の構造を解き明かす -村上 聡&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/74/74-3-kamachi.pdf">
+                                金属イオンが生み出すちから -蒲池 利章&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/74/74-4-murata.pdf">
+                                Webデータから新たな知識を -村田 剛志&nbsp研究室
+                            </a></li>
+                            </ul>
+                            <h5>73号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/73/73-1-kawashima.pdf">
+                                空気圧の有効利用を目指して -川嶋 健嗣&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/73/73-2-iwamori.pdf">
+                                沈み込み帯での水を追う -岩森 光&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/73/73-3-nitta.pdf">
+                                人間とコンピュータの対話へ -新田 克己&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/73/73-4-eguchi.pdf">
+                                酵素化学の道を拓く -江口 正&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/73/73-5-sato-saito.pdf">
+                                新たな視点からのエネルギー利用 -佐藤・齊藤&nbsp研究室
+                            </a></li>
+                            </ul>
+                            <h5>72号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/72/72-2-konishi.pdf">
+                              東工大の新図書館 -&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/72/72-3-suzumura.pdf">
+                              リアルタイムでの大規模データ処理 -鈴村 豊太郎&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/72/72-4-tanaka.pdf">
+                              現実的状況を考慮した暗号へ -田中 圭介&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/72/72-5-akagi.pdf">
+                              次世代送電網の実現を目指して -赤木 泰文&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/72/72-6-kondo.pdf">
+                              環境標的がん治療の明日を探る -近藤 科江&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>71号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/71/71-1-TSUBAME.pdf">
+                                トップレベルの スパコン TSUBAME -&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/71/71-2-tsurumi-takeda.pdf">
+                                未来のセラミックスを考える -鶴見・武田&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/71/71-3-kawaguchi.pdf">
+                                分子活性化への道を拓く -川口 博之&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/71/71-4-iwasaki.pdf">
+                                相同組換えの真理に迫る -岩? 博史&nbsp研究室
+                            </a></li>
+                                <li><a href="https://landfaller.com/pdf/71/71-5-kobayashi.pdf">
+                                一歩先の音声合成を目指して -小林 隆夫&nbsp研究室
+                            </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="item4" role="tabpanel" aria-labelledby="item4-tab">
+                            <h5>70号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/70/70-1-kaneko.pdf">
+                              マクロ経済学から世界を解く -金子 昭彦&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/70/70-2-gakuseishien.pdf">
+                              東工大の学生支援 -&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/70/70-3-arisaka.pdf">
+                              T4 ファージの謎を追い求めて -有坂 文雄&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/70/70-4-takahashi.pdf">
+                              人間の能力を活かすＶＲ -高橋 秀智&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/70/70-5-kitamira-komada.pdf">
+                              細胞増殖の神秘に迫る -喜多村・駒田&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>69号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/69/69-1-nakamoto.pdf">
+                              星々の起源を紐解く -中本 泰史&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/69/69-2-jinnochi.pdf">
+                              素粒子物理学の最先端をゆく -陣内 修&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/69/69-3-fujita.pdf">
+                              つながりを科学する新たな分野 -藤田 政之&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/69/69-4-tokunaga.pdf">
+                              細胞の真の動きを見きわめる -徳永 万喜洋&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/69/69-5-takata.pdf">
+                              結びついた分子のゆくえ -高田 十志和&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>68号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/68/68-1-ocw-i..pdf">
+                              ocw/ocw-iと教務Webシステム -&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/68/68-2-nakamura.pdf">
+                              中性子過剰核に魅せられて -中村 隆司&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/68/68-3-wada-yamanaka.pdf">
+                              「光」の可能性を求めて -和田・山中&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/68/68-4-watanabe.pdf">
+                              プラズマで循環型社会を拓く -渡辺 隆行&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/68/68-5-sakai-yamaoka.pdf">
+                              ユーザに優しいインターネット -酒井 ･ 山岡&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/68/68-6-wada.pdf">
+                              安全な建築物を設計するために -和田 章&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/68/68-7-ichise.pdf">
+                              難病解決への糸口を探る -一瀬 宏&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/68/68-8-sekine-seio.pdf">
+                              核酸分子をデザインする -関根・清尾&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>67号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/67/67-1-akita-yoshizawa.pdf">
+                              賢い分子を創る -穐田・吉沢&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/67/67-2-okutomi-tanaka.pdf">
+                              進歩し続ける画像処理 -奥富・田中&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/67/67-3-tanaka.pdf">
+                              生物の形を手足から探求する -田中 幹子&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/67/67-4-seno.pdf">
+                              新たなオフィスのあり方 -妹尾 大&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/67/67-5-nishizaki.pdf">
+                              λ計算の可能性を追求する -西崎 真也&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>66号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/66/66-1-hanamura.pdf">
+                              エネルギー効率の向上へ -花村 克悟&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/66/66-2-hosono-kamiya.pdf">
+                              常識を覆す新材料 -細野・神谷&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/66/66-3-sugiyama.pdf">
+                              より賢いコンピューターへ -杉山 将&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/66/66-4-nakamura.pdf">
+                              極限酵素が切り拓く未来 -中村 聡&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/66/66-5-yamaura-huang.pdf">
+                              新たな制御による多様な可能性 -山浦・黄&nbsp研究室
+                          </a></li>
+                            </ul>
+                            <h5>65号</h5>
+                            <ul class="tlist">
+                                <li><a href="https://landfaller.com/pdf/65/65-1-kuze.pdf">
+                              ニュートリノの神秘を追い求めて -久世 正弘&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/65/65-2-ishitani.pdf">
+                              人工光合成が創り出す未来 -石谷 治&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/65/65-3-yagi.pdf">
+                              機械と人体をつなぐ技術 -八木 透&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/65/65-4-kudo.pdf">
+                              ペリオスチンが医療を変える -工藤 明&nbsp研究室
+                          </a></li>
+                                <li><a href="https://landfaller.com/pdf/65/65-5-soshiroda.pdf">
+                              魅力あるまちと観光を目指して -十代田 朗&nbsp研究室
+                          </a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--aside-->
+            <div class="col-lg-3 col-md-4">
+                <div class="row pr-md-3 pb-3">
+                    <h2 class="col-12 title1 h3 ">おすすめの記事</h2>
+                    <div class="col-12">
+                        <div class="row pb-1 ">
+                            <a href="https://landfaller.com/pdf/80/80-5-hatano.pdf" class="col-12 item-img item-warp" style="background:linear-gradient(45deg,rgb(215,72,-40),rgb(-40,215,89));">
+                                <div class="row itembox side justify-content-center align-items-center">
+                                    <div class="col-12 px-5 px-md-2 ">
+                                        <span class="h5"><span class="badge badge-pill badge-info ">80号</span>
+                                        </span>
+                                        <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                        </span>
+                                        <h3 class="h5 mt-2 "><strong>デバイスの可能性 究極の素材ダイヤモンド</strong></h3>
+                                        <p class="text-right">波多野 睦子&nbsp研究室</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 ">
+                            <a href="https://landfaller.com/pdf/69/69-2-jinnochi.pdf" class="col-12 item-img item-warp" style="background:linear-gradient(45deg,rgb(215,20,-40),rgb(-40,-3,215));">
+                                <div class="row itembox side justify-content-center align-items-center">
+                                    <div class="col-12 px-5 px-md-2 ">
+                                        <span class="h5"><span class="badge badge-pill badge-info ">69号</span>
+                                        </span>
+                                        <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                        </span>
+                                        <h3 class="h5 mt-2 "><strong>素粒子物理学の最先端をゆく</strong></h3>
+                                        <p class="text-right">陣内 修&nbsp研究室</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 ">
+                            <a href="https://landfaller.com/pdf/82/82-3-yasuoka-takeuchi.pdf" class="col-12 item-img item-warp" style="background:linear-gradient(45deg,rgb(215,215,-40),rgb(-40,104,215));">
+                                <div class="row itembox side justify-content-center align-items-center">
+                                    <div class="col-12 px-5 px-md-2 ">
+                                        <span class="h5"><span class="badge badge-pill badge-info ">82号</span>
+                                        </span>
+                                        <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                        </span>
+                                        <h3 class="h5 mt-2 "><strong>よみがえれ水</strong></h3>
+                                        <p class="text-right">安岡・竹内&nbsp研究室</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 ">
+                            <a href="https://landfaller.com/pdf/66/66-3-sugiyama.pdf" class="col-12 item-img item-warp" style="background:linear-gradient(45deg,rgb(-40,215,206),rgb(215,197,-40));">
+                                <div class="row itembox side justify-content-center align-items-center">
+                                    <div class="col-12 px-5 px-md-2 ">
+                                        <span class="h5"><span class="badge badge-pill badge-info ">66号</span>
+                                        </span>
+                                        <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                        </span>
+                                        <h3 class="h5 mt-2 "><strong>より賢いコンピューターへ</strong></h3>
+                                        <p class="text-right">杉山 将&nbsp研究室</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-1 ">
+                            <a href="https://landfaller.com/pdf/85/85-2-ueno.pdf" class="col-12 item-img item-warp" style="background:linear-gradient(45deg,rgb(38,-40,215),rgb(215,72,-40));">
+                                <div class="row itembox side justify-content-center align-items-center">
+                                    <div class="col-12 px-5 px-md-2 ">
+                                        <span class="h5"><span class="badge badge-pill badge-info ">85号</span>
+                                        </span>
+                                        <span class="h5"><span class="badge badge-pill badge-danger ">pdf</span>
+                                        </span>
+                                        <h3 class="h5 mt-2 "><strong>タンパク質集合体に見出す新機能</strong></h3>
+                                        <p class="text-right">上野 隆史&nbsp研究室</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-0 pr-1">
+                    <h2 class="col-12 title1 h3 ">TWITTER</h2>
+                    <div class="col-9 bg-white">
+                        <a class="twitter-timeline" data-lang="ja" data-height="400" data-chrome="noheader nofooter noborder" data-dnt="true" data-theme="light" href="https://twitter.com/LANDFALL_PR?ref_src=twsrc%5Etfw">Tweets by
+                                LANDFALL_PR</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-1 bg-dark text-white text-center mt-2">
+        <ul class=" footlist py-1 my-0 ">
+            <li><a href="https://landfaller.com/index.html">Home</a></li>
+            <li><a href="https://landfaller.com/about_landfall.html">LANDFALLとは</a></li>
+            <li><a href="https://landfaller.com/find_articles.html">記事を探す</a></li>
+            <li><a href="https://landfaller.com/about_use.html">利用について</a></li>
+        </ul>
+        Copyright &copy; LANDFALL編集委員会
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
