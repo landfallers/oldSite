@@ -396,16 +396,16 @@ nav.page_nav {
 
 .page_nav .nav_n {
     font-size: 1em;
-    line-height: 50px;
+    line-height: 40px;
     display: block;
     float: left;
     transition: 400ms ease;
-    letter-spacing: 0.1em;
+    letter-spacing: 0em;
     color: #37474F;
-    border-radius: 50%;
+    border-radius: 0.7em;
     width: 50px;
-    height: 50px;
-    margin: auto .5em;
+    height: 40px;
+    margin: auto .2em;
 }
 
 .page_nav .nav_n:hover,
@@ -413,25 +413,25 @@ nav.page_nav {
     font-weight: bold;
     color: #ffffff;
     background-color: rgb(64, 196, 236);
-    border-radius: 50%;
+    border-radius: 0.3em;
 }
 
 .page_nav .nav_n.prev:hover,
 .page_nav .nav_n.next:hover {
     color: rgb(64, 196, 236);
     background-color: transparent;
-    border-radius: 50%;
+    border-radius: 0.3em;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 992px) {
     .page_nav .pnav_box {
-        margin-top: 50px;
-        padding: 0 10px;
+        margin-top: 10px;
+        padding: 0 5px;
     }
     .page_nav .nav_n {
         font-size: 0.8em;
         line-height: 25px;
-        width: 45px;
+        width: 35px;
         height: 25px;
         margin: auto .1em;
         border-radius: 0.3em;
@@ -449,43 +449,6 @@ nav.page_nav {
         border-radius: 0.3em;
     }
 }
-
-@media only screen and (min-width: 120px) and (max-width: 767px) {
-    .page_nav .nav_n {
-        display: none;
-        border-radius: 0.3em;
-    }
-    .page_nav .nav_n:nth-of-type(2) {
-        position: relative;
-        padding-right: 20px;
-    }
-    .page_nav .nav_n:nth-of-type(2)::after {
-        font-size: 1.2em;
-        position: absolute;
-        top: 0;
-        left: 25px;
-        content: '...';
-    }
-    .page_nav .nav_n:nth-child(-n+3),
-    .page_nav .nav_n:nth-last-child(-n+3) {
-        display: block;
-    }
-    .page_nav .nav_n:nth-last-child(-n+4) {
-        padding: 0 5px;
-    }
-    .page_nav .nav_n:nth-last-child(-n+4)::after {
-        content: none;
-    }
-    .page_nav .nav_n:hover,
-    .page_nav .nav_n.current {
-        border-radius: 0.3em;
-    }
-    .page_nav .nav_n.prev:hover,
-    .page_nav .nav_n.next:hover {
-        border-radius: 0.3em;
-    }
-}
-
 
 /* ページナビ　ここまで */
 
